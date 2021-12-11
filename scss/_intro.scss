@@ -1,0 +1,15 @@
+.intro {
+  text-align: center;
+
+  &__title {
+    color: $clr--white;
+    font-size: 27px;
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    color: $clr--white;
+    font-weight: $fw--medium;
+    line-height: 1.7;
+  }
+}

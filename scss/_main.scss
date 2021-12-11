@@ -1,0 +1,39 @@
+.main {
+  &__cta {
+    width: 100%;
+    background-color: $clr--accent-blue;
+    padding: 20px 70px;
+    border-radius: 10px;
+    color: $clr--white;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0px 8px 0 0 rgba(0, 0, 0, 0.2);
+
+    span {
+      font-weight: $fw--semiBold;
+    }
+  }
+
+  &__form-wrapper {
+    background-color: $clr--white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__tas {
+    color: $clr--neutral-grBlue;
+    font-size: 10px;
+    text-align: center;
+    padding-inline: 30px;
+    font-weight: $fw--semiBold;
+
+    a {
+      color: $clr--primary-red;
+      font-weight: $fw--bold;
+      text-decoration: none;
+      line-height: 2;
+    }
+  }
+}
