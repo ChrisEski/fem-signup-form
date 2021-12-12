@@ -1,4 +1,9 @@
 .main {
+  @media (min-width: $desktop) {
+    // border: 2px solid black;
+    flex-basis: 50%;
+    max-width: 540px;
+  }
   &__cta {
     width: 100%;
     background-color: $clr--accent-blue;

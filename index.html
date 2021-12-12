@@ -9,6 +9,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Intro component with sign up form</title>
     <style>
       .attribution {
@@ -23,22 +29,28 @@
   </head>
   <body>
     <div class="container">
-      <section class="intro">
+      <header class="intro">
         <h1 class="intro__title">Learn to code by watching others</h1>
         <p class="intro__subtitle">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
-      </section>
+      </header>
       <main class="main">
         <div class="main__cta">
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </div>
         <div class="main__form-wrapper">
-          <form action="#" method="GET" class="form">
+          <form
+            action="/register.html"
+            method="GET"
+            class="form"
+            id="form"
+            novalidate
+          >
             <!-- FIRST NAME INPUT -->
-            <div class="input-group">
+            <div class="input-group" data-error="false">
               <input
                 type="text"
                 id="firstName"
@@ -51,10 +63,10 @@
                 class="form__icon-error"
               />
             </div>
-            <p class="form__text-error">Placeholder error text</p>
+            <p class="form__text-error"></p>
 
             <!-- LAST NAME INPUT -->
-            <div class="input-group">
+            <div class="input-group" data-error="false">
               <input
                 type="text"
                 id="lastName"
@@ -67,10 +79,10 @@
                 class="form__icon-error"
               />
             </div>
-            <p class="form__text-error">Placeholder error text</p>
+            <p class="form__text-error"></p>
 
             <!-- EMAIL INPUT -->
-            <div class="input-group">
+            <div class="input-group" data-error="false">
               <input
                 type="email"
                 id="email"
@@ -83,10 +95,10 @@
                 class="form__icon-error"
               />
             </div>
-            <p class="form__text-error">Placeholder error text</p>
+            <p class="form__text-error"></p>
 
             <!-- PASSWORD INPUT -->
-            <div class="input-group">
+            <div class="input-group" data-error="false">
               <input
                 type="password"
                 id="password"
@@ -99,7 +111,7 @@
                 class="form__icon-error"
               />
             </div>
-            <p class="form__text-error">Placeholder error text</p>
+            <p class="form__text-error"></p>
 
             <!-- FORM BUTTON -->
             <button type="submit" class="form__btn">
@@ -113,14 +125,7 @@
         </div>
       </main>
     </div>
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
+
     <script src="./dist/script.js"></script>
   </body>
 </html>

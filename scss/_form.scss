@@ -3,6 +3,23 @@
     // border: 1px solid red;
     margin-bottom: 15px;
     position: relative;
+
+    &[data-error='true'] {
+      margin-bottom: 5px;
+
+      input {
+        border: 2px solid $clr--primary-red;
+        color: $clr--primary-red;
+      }
+
+      img {
+        display: block;
+      }
+
+      + p {
+        display: block;
+      }
+    }
   }
 
   &__field-icon {

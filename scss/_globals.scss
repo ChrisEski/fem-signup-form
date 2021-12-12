@@ -28,4 +28,8 @@ a {
   background: url('./../images/bg-intro-mobile.png'), $clr--primary-red;
   padding-inline: 24px;
   padding-block: 70px;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
